@@ -1,0 +1,13 @@
+language: python
+python: "3.7"
+# command to run tests
+script: python -m unittest discover
+# deploy to pypi
+deploy:
+ provider: pypi
+ skip_cleanup: true
+ user: Yangyang Li
+ distributions: none
+ password: " "
+ on:
+   branch: master
